@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Confirmation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h3>Please confirm your message.</h3>
+	
+    <p th:text="'To: ' + ${mailpage.emailAdress}" />   
+    <p th:text="'Subject: ' + ${mailpage.subject}" />
+    <p th:text ="'Content: ' + ${mailpage.text}" />
+    
+    <a href="/mail-sent">CONFIRM</a>
+</body>
+</html>
